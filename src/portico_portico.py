@@ -13,7 +13,7 @@ from .common import (
 from numpy.typing import NDArray
 
 
-def calc_lig_semi_rig(n0: BeamNode, n1: BeamNode, n1_free_g: NDArray):
+def calc_lig_rig_parcial(n0: BeamNode, n1: BeamNode, n1_free_g: NDArray):
     def cond_1():
         d = {"n0": {"n0g1": n0.g1, "n0g2": n0.g2}, "n1": {"n1g1": n1.g1, "n1g2": n1.g2}}
         for label_f, f in d["n1"].items():
@@ -84,7 +84,7 @@ def calc_lig_semi_rig(n0: BeamNode, n1: BeamNode, n1_free_g: NDArray):
             return d
 
 
-def calc_lig_full_rig(n0: BeamNode, n1: BeamNode):
+def calc_lig_rig_total(n0: BeamNode, n1: BeamNode):
     def cond_1():
         d = {"n0": {"n0g1": n0.g1, "n0g2": n0.g2}, "n1": {"n1g1": n1.g1, "n1g2": n1.g2}}
         for couple1, couple2 in [

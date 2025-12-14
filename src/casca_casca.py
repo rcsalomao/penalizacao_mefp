@@ -2,7 +2,7 @@ from math import degrees
 from .common import calc_angle, MAX_OPENING_ANGLE, MAX_MERGE_ANGLE, ShellNode
 
 
-def calc_lig_full_rig(n0: ShellNode, n1: ShellNode):
+def calc_lig_rig_total(n0: ShellNode, n1: ShellNode):
     def cond_1():
         d = {"n0": {"h": n0.h}, "n1": {"h": n1.h}}
         label_e = "h"
