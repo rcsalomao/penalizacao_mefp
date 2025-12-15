@@ -40,7 +40,7 @@ Seguem as condições de verificação para os diversos tipos de ligações cont
 #### Condição 2
 <img src="./assets/portico_casca_rig_total/cond_2.svg" width="350" height="350">
 
-## Ligação casca-casca parcial
+## Ligação casca-casca total
 
 #### Condição 1
 <img src="./assets/casca_casca_rig_total/cond_1.svg" width="350" height="350">
