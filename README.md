@@ -2,7 +2,7 @@
 Conjunto de heurísticas para construção de penalizadores de graus de giro, empregados na formulação posicional (MEFP).
 
 # Tipos de ligações e condições
-Seguem à seguir as condições de verificação para os diversos tipos de ligações contempladas (sejam do tipo portico-portico, portico-casca ou casca-casca).
+Seguem as condições de verificação para os diversos tipos de ligações contempladas (sejam do tipo portico-portico, portico-casca ou casca-casca).
 
 ## Ligação portico-portico parcial
 
