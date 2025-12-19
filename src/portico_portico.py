@@ -53,7 +53,7 @@ def calc_lig_rig_parcial(n0: BeamNode, n1: BeamNode, n1_free_g: NDArray):
         for label_f, f in d["n1"].items():
             if id(f) == id(n1_free_g):
                 continue
-            new_point = np.cross(*(d["n0"].values()))
+            new_point = np.cross(d["n0"]["n0g1"], d["n0"]["n0g2"])
             for combi in combinations(
                 [("np", new_point), *(d["n0"].items())],
                 2,
@@ -188,7 +188,7 @@ def calc_lig_rig_total(n0: BeamNode, n1: BeamNode):
 
     def cond_5():
         d = {"n0": {"n0g1": n0.g1, "n0g2": n0.g2}, "n1": {"n1g1": n1.g1, "n1g2": n1.g2}}
-        new_point = np.cross(*(d["n0"].values()))
+        new_point = np.cross(d["n0"]["n0g1"], d["n0"]["n0g2"])
         for label_f, f in d["n1"].items():
             for combi in combinations([("np", new_point), *(d["n0"].items())], 2):
                 label_e, e = combi[0]
